@@ -1,17 +1,13 @@
-# Node modules
+
 /node_modules/
 
-# Логи
 *.log
 
-# Файлы конфигурации
 .env
 
-# Папки с временными файлами
 npm-debug.log
-yarn-debug.log
-yarn-error.log
+yarn-debug.log.log
 
-# Папки с билд-артефактами
+
 /dist/
 /build/

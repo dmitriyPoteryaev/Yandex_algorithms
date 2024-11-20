@@ -40,23 +40,16 @@ module.exports.ThirdSolution = function(string) {
         } else {
     
             dic[key] = 1;
-        }
+        };
+
+        if(dic[key] > count) {
+
+            count =  dic[key]; 
+            ans = key;
+        };
         
-    }
-    
-    const ArrayOfQuantityUniqeSymbol  = Object.values(dic);
-    
-    for(let i = 0; ArrayOfQuantityUniqeSymbol.length > i; i++) {
-    
-       if( ArrayOfQuantityUniqeSymbol[i] > count) {
-    
-        ans = Object.keys(dic)[i];
-        count = ArrayOfQuantityUniqeSymbol[i];
-       }
-    
     };
     
-   return ans
-
+   return ans;
 
 }
